@@ -1,0 +1,14 @@
+# Demonstration commands for task A
+
+
+# Make script executable
+chmod +x create_user.sh
+
+# Test 1: Run without arguments (triggers error)
+./create_user.sh
+
+# Test 2: Run with valid argument
+./create_user.sh testuser
+
+# Test 3: Switch user and verify forced password change
+su - testuser
