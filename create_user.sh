@@ -10,7 +10,7 @@ USERNAME="$1"
 
 # 2. Check if group "dev_group" exists; if not, create it
 if ! getent group dev_group > /dev/null 2>&1; then
-    sudo groupadd dev_group
+    sudo groupadd dev_group;
     echo "Group 'dev_group' created."
 fi
 
